@@ -16,6 +16,7 @@ export interface BjaiEvent {
   featured: boolean;
   image: string;
   gallery: string[];
+  facebookUrl?: string;
   date: string;
   time: string;
   location: string;
@@ -26,6 +27,34 @@ export interface BjaiEvent {
 }
 
 export const events: BjaiEvent[] = [
+  {
+    slug: "bjai-summer-picnic-2026",
+    title: "BJAI Summer Picnic 2026",
+    category: "Community",
+    status: "past",
+    featured: true,
+    image: "/images/events/bjai-summer-picnic-2026.jpg",
+    gallery: [],
+    facebookUrl:
+      "https://www.facebook.com/story.php?story_fbid=1060127356714928&id=100081530210461&rdid=IfvrPqC1fnsjfYp3#",
+    date: "19 July 2026",
+    time: "Afternoon",
+    location: "Donadea Forest Park, Co. Kildare",
+    shortDescription:
+      "35 to 40 families and a turnout of over 100+ BJAI members gathered at Donadea Forest Park for a joyful day of potluck food, games, and community spirit.",
+    description: [
+      "BJAIreland celebrated their 2026 BJAI Summer Picnic on 19th July at Donadea Forest Park, where 35 to 40 families and a turnout of over 100+ BJAI members attended the picnic with their families.",
+      "A huge thank you to everyone who joined us for the BJAI Summer Picnic 2026 and made it such a memorable event. From delicious potluck dishes and exciting games to laughter, conversations, and new friendships, it was a day filled with joy and togetherness.",
+      "Special thanks to all our volunteers and everyone who contributed their time, energy, and delicious food to make the event a success.",
+      "A thank you note from one of our executive members, Amit Jaiswal:",
+      "“A heartfelt thank you to everyone who joined us for the BJAI Summer Picnic 2026 today. It was wonderful to see such a fantastic turnout and so many families coming together to enjoy a day filled with laughter, friendship, games, music, and delicious homemade food.",
+      "Thank you to everyone who brought such lovely and tasty dishes, volunteered their time, and helped make the event such a great success. Your enthusiasm, kindness, and community spirit made the day truly special.",
+      "We hope you all had a wonderful time and created many happy memories with family and friends.",
+      "Thank you once again for being part of our BJAI family. We look forward to seeing you at our future events! ❤️”",
+    ],
+    organiser: "BJAI Events Team",
+    contactEmail: "events@bjai.ie",
+  },
   {
     slug: "chhath-puja-celebration-2026",
     title: "Chhath Puja Celebration",

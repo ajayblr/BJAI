@@ -9,6 +9,7 @@ import {
   MapPin,
   Mail,
   User,
+  ExternalLink,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -62,22 +63,30 @@ export default async function EventDetailPage({
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[50vh] min-h-[360px] w-full">
-        <Image src={event.image} alt={event.title} fill priority className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-hero-overlay" />
-        <div className="absolute inset-0 z-10 flex flex-col items-start justify-end px-4 pb-10 sm:px-6 lg:px-8">
-          <div className="mx-auto w-full max-w-7xl">
-            <Badge
-              className={cn(
-                "px-3 py-1 text-xs font-semibold shadow",
-                categoryStyles[event.category]
-              )}
-            >
-              {event.category}
-            </Badge>
-            <h1 className="mt-3 max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-5xl">
-              {event.title}
-            </h1>
+      <section className="bg-white pt-6 sm:pt-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-md">
+            <Image
+              src={event.image}
+              alt={event.title}
+              fill
+              priority
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-hero-overlay" />
+            <div className="absolute inset-0 z-10 flex flex-col items-start justify-end p-6 sm:p-8">
+              <Badge
+                className={cn(
+                  "px-3 py-1 text-xs font-semibold shadow",
+                  categoryStyles[event.category]
+                )}
+              >
+                {event.category}
+              </Badge>
+              <h1 className="mt-3 max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-5xl">
+                {event.title}
+              </h1>
+            </div>
           </div>
         </div>
       </section>
@@ -120,6 +129,16 @@ export default async function EventDetailPage({
                     </div>
                   ))}
                 </div>
+                {event.facebookUrl && (
+                  <a
+                    href={event.facebookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-royalblue hover:underline"
+                  >
+                    <ExternalLink className="h-4 w-4" /> View on Facebook
+                  </a>
+                )}
               </div>
 
               {/* Map placeholder */}

@@ -3,13 +3,18 @@ import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import EventCard from "@/components/shared/EventCard";
 import Reveal from "@/components/shared/Reveal";
-import { upcomingEvents, pastEvents } from "@/data/events";
+import { upcomingEvents, pastEvents, getEventBySlug } from "@/data/events";
 
 export const metadata: Metadata = {
   title: "Events",
   description:
     "Discover upcoming and past BJAI events — festivals, cultural celebrations, youth programmes, charity fundraisers, and community gatherings across Ireland.",
 };
+
+const summerPicnic = getEventBySlug("bjai-summer-picnic-2026");
+const pastEventsExcludingPicnic = pastEvents.filter(
+  (e) => e.slug !== "bjai-summer-picnic-2026"
+);
 
 export default function EventsPage() {
   return (
@@ -18,6 +23,24 @@ export default function EventsPage() {
         title="Events"
         subtitle="Festivals, cultural celebrations, charity galas, youth programmes and community gatherings — there's always something happening at BJAI."
       />
+
+      {/* Latest highlight */}
+      {summerPicnic && (
+        <section className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <SectionHeading
+              eyebrow="Just Happened"
+              title="Latest Event Highlight"
+              align="left"
+            />
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <Reveal>
+                <EventCard event={summerPicnic} />
+              </Reveal>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Upcoming events */}
       <section className="bg-white py-16 sm:py-20">
@@ -46,7 +69,7 @@ export default function EventsPage() {
             align="left"
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {pastEvents.map((event, i) => (
+            {pastEventsExcludingPicnic.map((event, i) => (
               <Reveal key={event.slug} delay={(i % 3) * 0.08}>
                 <EventCard event={event} />
               </Reveal>

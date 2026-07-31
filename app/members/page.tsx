@@ -14,10 +14,6 @@ export const metadata: Metadata = {
     "Meet the BJAI committee — the dedicated team of volunteers leading our community's cultural, charity, youth and networking activities across Ireland.",
 };
 
-const executiveCommittee = members.slice(0, 3);
-const coordinators = members.slice(3, 8);
-const volunteers = members.slice(8, 11);
-
 export default function MembersPage() {
   return (
     <>
@@ -32,47 +28,11 @@ export default function MembersPage() {
           <SectionHeading
             eyebrow="Leadership"
             title="Executive Committee"
-            subtitle="The team guiding BJAI's strategy, operations, and finances."
+            subtitle="The team guiding BJAI's strategy, operations, culture, youth, charity and events."
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {executiveCommittee.map((member, i) => (
-              <Reveal key={member.name} delay={(i % 4) * 0.08}>
-                <MemberCard member={member} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Coordinators */}
-      <section className="bg-cream py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Programme Leads"
-            title="Coordinators"
-            subtitle="The team behind BJAI's culture, youth, charity, events and media activities."
-          />
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {coordinators.map((member, i) => (
-              <Reveal key={`coordinator-${i}`} delay={(i % 3) * 0.08}>
-                <MemberCard member={member} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Volunteers */}
-      <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Community Heroes"
-            title="Our Volunteers"
-            subtitle="The generous individuals who give their time to make every BJAI event possible."
-          />
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {volunteers.map((member, i) => (
-              <Reveal key={`volunteer-${i}`} delay={(i % 3) * 0.08}>
+            {members.map((member, i) => (
+              <Reveal key={`member-${i}`} delay={(i % 4) * 0.08}>
                 <MemberCard member={member} />
               </Reveal>
             ))}
