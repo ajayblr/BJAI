@@ -8,7 +8,13 @@ import { Member } from "@/data/members";
 
 const READ_MORE_THRESHOLD = 180;
 
-export default function MemberCard({ member }: { member: Member }) {
+export default function MemberCard({
+  member,
+  showRole = true,
+}: {
+  member: Member;
+  showRole?: boolean;
+}) {
   const [expanded, setExpanded] = useState(false);
   const paragraphs = member.bio ? member.bio.split("\n") : [];
   const canTruncate = member.bio.length > READ_MORE_THRESHOLD;
@@ -34,6 +40,9 @@ export default function MemberCard({ member }: { member: Member }) {
         <h3 className="font-heading text-lg font-bold text-foreground">
           {member.name}
         </h3>
+        {showRole && (
+          <p className="text-sm font-semibold text-saffron">{member.role}</p>
+        )}
         {member.bio && (
           <>
             {expanded || !canTruncate ? (

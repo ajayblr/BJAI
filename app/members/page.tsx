@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "Meet the BJAI committee — the dedicated team of volunteers leading our community's cultural, charity, youth and networking activities across Ireland.",
 };
 
+const leadership = members.slice(0, 3);
+const executiveCommitteeMembers = members.slice(3);
+
 export default function MembersPage() {
   return (
     <>
@@ -22,18 +25,32 @@ export default function MembersPage() {
         subtitle="Meet the dedicated volunteers who lead and support BJAI's activities throughout the year."
       />
 
-      {/* Executive Committee */}
+      {/* Leadership */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Leadership"
-            title="Executive Committee"
+            title="Office Bearers"
             subtitle="The team guiding BJAI's strategy, operations, culture, youth, charity and events."
           />
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {members.map((member, i) => (
-              <Reveal key={`member-${i}`} delay={(i % 4) * 0.08}>
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {leadership.map((member, i) => (
+              <Reveal key={`leader-${i}`} delay={(i % 3) * 0.08}>
                 <MemberCard member={member} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Executive Committee Members */}
+      <section className="bg-cream py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="Committee" title="Executive Committee Members" />
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {executiveCommitteeMembers.map((member, i) => (
+              <Reveal key={`member-${i}`} delay={(i % 4) * 0.08}>
+                <MemberCard member={member} showRole={false} />
               </Reveal>
             ))}
           </div>

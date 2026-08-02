@@ -16,13 +16,13 @@ export const members: Member[] = [
   },
   {
     name: "Abhishek Thakur",
-    role: "Treasurer",
+    role: "General Secretary",
     photo: "/images/members/abhishekthakur.jpg",
     bio: "I am from Patna, Bihar, and moved to Ireland in 2008. I currently work as a Software Development Team Lead and live in Naas, County Kildare, with my wife and two children.\nI hold a Master’s degree in Computing from South East Technological University, Waterford, formerly known as Waterford Institute of Technology, as well as a B.Tech. degree from SASTRA University, Tamil Nadu.\nI speak Maithili, Hindi, and English. In my free time, I enjoy meeting new people, travelling, and cooking. I am delighted to see the growing community of people from Bihar and Jharkhand in Ireland and look forward to connecting with them through events organised by BJAI.\nI am always happy to contribute my time and support towards strengthening BJAI and promoting the continued growth of our community in Ireland.",
   },
   {
     name: "Prabhat Ravi",
-    role: "Team Member",
+    role: "Treasurer",
     photo: "/images/members/prabhatravi.jpg",
     bio: "My name is Prabhat Ravi. I am originally from Hajipur, Bihar, and have been based in Ireland since 2012. Professionally, I work in the financial technology sector, while also staying deeply committed to community service and cultural engagement.\nAs an active member of BJAI – Bihar Jharkhand Association of Ireland, I am passionate about bringing our community together, celebrating our heritage, and passing our cultural values on to the next generation. Over the past four years, I have been actively involved in organising Chhath Puja in Ireland, which has been a proud and meaningful milestone for our community.\nBeing part of BJAI is important to me because it helps keep our traditions alive, especially festivals like Chhath Puja, which represent devotion, purity, family, and community spirit. I also believe BJAI plays a vital role in helping the next generation growing up in Ireland stay connected to their Bihari and Jharkhandi roots with pride.\nBeyond cultural celebrations, BJAI provides a strong support system and an extended family for people living away from home. I am always happy to contribute my time and effort towards strengthening this community and helping BJAI continue to grow in Ireland.",
   },

@@ -58,7 +58,7 @@ export default function EventCard({ event }: { event: BjaiEvent }) {
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="h-4 w-4 text-saffron" />
-            <span>{event.location}</span>
+            <span>{event.locationShort ?? event.location}</span>
           </div>
         </div>
       </CardContent>

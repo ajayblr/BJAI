@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, Mail, Phone, MapPin } from "lucide-react";
+import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { mainNav, moreNav, socialLinks, contactInfo } from "@/data/navigation";
 import { FacebookIcon, InstagramIcon, XTwitterIcon, YoutubeIcon } from "@/components/shared/SocialIcons";
 
@@ -72,15 +72,13 @@ export default function Footer() {
               Get Involved
             </h3>
             <ul className="mt-4 space-y-2 text-sm">
-              {moreNav
-                .filter((item) => !["/gallery", "/faq", "/contact"].includes(item.href))
-                .map((item) => (
-                  <li key={item.href}>
-                    <Link href={item.href} className="text-cream/80 transition-colors hover:text-gold">
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+              {moreNav.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-cream/80 transition-colors hover:text-gold">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -94,12 +92,6 @@ export default function Footer() {
                 <Mail className="h-4 w-4 shrink-0 text-gold" />
                 <a href={`mailto:${contactInfo.email}`} className="hover:text-gold">
                   {contactInfo.email}
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 shrink-0 text-gold" />
-                <a href={`tel:${contactInfo.phone}`} className="hover:text-gold">
-                  {contactInfo.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2">

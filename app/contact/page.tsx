@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MapPin, MessageCircle } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import Reveal from "@/components/shared/Reveal";
@@ -54,20 +54,6 @@ export default function ContactPage() {
                         className="text-sm text-royalblue hover:underline"
                       >
                         {contactInfo.email}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3 rounded-2xl bg-cream p-5 shadow-sm ring-1 ring-foreground/5">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-festive text-white">
-                      <Phone className="h-5 w-5" />
-                    </span>
-                    <div>
-                      <p className="font-heading text-sm font-bold text-foreground">Phone</p>
-                      <a
-                        href={`tel:${contactInfo.phone}`}
-                        className="text-sm text-royalblue hover:underline"
-                      >
-                        {contactInfo.phone}
                       </a>
                     </div>
                   </div>

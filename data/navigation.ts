@@ -9,7 +9,6 @@ export const mainNav: NavItem[] = [
   { label: "Mission", href: "/mission-vision" },
   { label: "Culture", href: "/culture-heritage" },
   { label: "Events", href: "/events" },
-  { label: "Gallery", href: "/gallery" },
   { label: "Members", href: "/members" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact Us", href: "/contact" },
@@ -17,14 +16,7 @@ export const mainNav: NavItem[] = [
 
 export const moreNav: NavItem[] = [
   { label: "Community Rules & Guidelines", href: "/community-guidelines" },
-  { label: "Membership", href: "/membership" },
-  { label: "Volunteer", href: "/charity-volunteering" },
   { label: "Donate", href: "/donate" },
-  { label: "Youth Programmes", href: "/youth-programmes" },
-  { label: "Business & Professional Network", href: "/business-network" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: "/contact" },
 ];
 
 export const socialLinks = {
@@ -37,6 +29,5 @@ export const socialLinks = {
 
 export const contactInfo = {
   email: "bjaireland@gmail.com",
-  phone: "+353 00 000 0000",
   location: "Ireland",
 };

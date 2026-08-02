@@ -141,18 +141,32 @@ export default async function EventDetailPage({
                 )}
               </div>
 
-              {/* Map placeholder */}
+              {/* Map */}
               <div className="mt-10">
                 <h2 className="font-heading text-xl font-bold text-foreground">
                   Location
                 </h2>
-                <div className="mt-4 flex h-56 w-full flex-col items-center justify-center gap-2 rounded-2xl bg-cream text-center ring-1 ring-foreground/5">
-                  <MapPin className="h-8 w-8 text-maroon" />
-                  <p className="font-semibold text-foreground">{event.location}</p>
-                  <p className="text-sm text-muted-foreground">
-                    Map preview coming soon
-                  </p>
-                </div>
+                {event.location ? (
+                  <div className="mt-4 h-72 w-full overflow-hidden rounded-2xl shadow-sm ring-1 ring-foreground/5">
+                    <iframe
+                      title={`Map showing ${event.location}`}
+                      src={`https://www.google.com/maps?q=${encodeURIComponent(
+                        event.location
+                      )}&output=embed`}
+                      width="100%"
+                      height="100%"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
+                ) : (
+                  <div className="mt-4 flex h-56 w-full flex-col items-center justify-center gap-2 rounded-2xl bg-cream text-center ring-1 ring-foreground/5">
+                    <MapPin className="h-8 w-8 text-maroon" />
+                    <p className="text-sm text-muted-foreground">
+                      Location to be confirmed
+                    </p>
+                  </div>
+                )}
               </div>
             </Reveal>
 

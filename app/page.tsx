@@ -56,14 +56,6 @@ export default function Home() {
               View Events
             </Button>
             <Button
-              render={<Link href="/charity-volunteering" />}
-              size="lg"
-              variant="outline"
-              className="border-white/60 bg-white/10 text-white hover:bg-white/20"
-            >
-              Become a Volunteer
-            </Button>
-            <Button
               render={<Link href="/contact" />}
               size="lg"
               variant="outline"
