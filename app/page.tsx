@@ -124,32 +124,32 @@ export default function Home() {
               </Button>
             </Reveal>
             <Reveal delay={0.1}>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col items-center gap-2 rounded-2xl bg-gradient-festive p-6 text-center text-white shadow-md">
-                  <HeartHandshake className="h-8 w-8" />
-                  <p className="font-heading text-lg font-bold">Charity</p>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="flex flex-col items-center gap-2 rounded-2xl bg-gradient-festive p-4 text-center text-white shadow-md sm:p-6">
+                  <HeartHandshake className="h-6 w-6 sm:h-8 sm:w-8" />
+                  <p className="font-heading text-base font-bold sm:text-lg">Charity</p>
                   <p className="text-sm text-white/90">
                     Supporting communities in Bihar, Jharkhand &amp; Ireland
                   </p>
                 </div>
-                <div className="flex flex-col items-center gap-2 rounded-2xl bg-royalblue p-6 text-center text-white shadow-md">
-                  <Users className="h-8 w-8" />
-                  <p className="font-heading text-lg font-bold">Community</p>
+                <div className="flex flex-col items-center gap-2 rounded-2xl bg-royalblue p-4 text-center text-white shadow-md sm:p-6">
+                  <Users className="h-6 w-6 sm:h-8 sm:w-8" />
+                  <p className="font-heading text-base font-bold sm:text-lg">Community</p>
                   <p className="text-sm text-white/90">
                     Families, students, professionals &amp; seniors together
                   </p>
                 </div>
-                <div className="flex flex-col items-center gap-2 rounded-2xl bg-deepgreen p-6 text-center text-white shadow-md">
-                  <Sparkles className="h-8 w-8" />
-                  <p className="font-heading text-lg font-bold">Culture</p>
+                <div className="flex flex-col items-center gap-2 rounded-2xl bg-deepgreen p-4 text-center text-white shadow-md sm:p-6">
+                  <Sparkles className="h-6 w-6 sm:h-8 sm:w-8" />
+                  <p className="font-heading text-base font-bold sm:text-lg">Culture</p>
                   <p className="text-sm text-white/90">
                     Festivals, heritage &amp; traditions of Bihar and
                     Jharkhand
                   </p>
                 </div>
-                <div className="flex flex-col items-center gap-2 rounded-2xl bg-maroon p-6 text-center text-white shadow-md">
-                  <Target className="h-8 w-8" />
-                  <p className="font-heading text-lg font-bold">Youth</p>
+                <div className="flex flex-col items-center gap-2 rounded-2xl bg-maroon p-4 text-center text-white shadow-md sm:p-6">
+                  <Target className="h-6 w-6 sm:h-8 sm:w-8" />
+                  <p className="font-heading text-base font-bold sm:text-lg">Youth</p>
                   <p className="text-sm text-white/90">
                     Mentoring &amp; developing the next generation
                   </p>

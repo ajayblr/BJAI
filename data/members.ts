@@ -69,12 +69,6 @@ export const members: Member[] = [
     bio: "",
   },
   {
-    name: "Amit Jaiswal",
-    role: "Team Member",
-    photo: "",
-    bio: "",
-  },
-  {
     name: "Alok Kumar",
     role: "Team Member",
     photo: "/images/members/alok.jpg",
@@ -86,7 +80,4 @@ export const members: Member[] = [
     photo: "/images/members/shambhukumar.jpg",
     bio: "My name is Shambhu Kumar. I was born and raised in Patna, and my roots go back to Darbhanga, Bihar. I now call Dublin, Ireland, my home.\nI began my academic journey at Magadh University and later pursued further studies through IGNOU, the Indian Institute of Management Calcutta, and the International Business Management Institute, Germany.\nProfessionally, I currently serve as EMEA Engineering Leader / Director of Engineering at eBay. Before this, I had the privilege of working with Microsoft and Amazon Web Services. My work focuses on AI, machine learning, databases, data science, cloud architecture, and enterprise engineering. I am also passionate about mentoring and enjoy helping others navigate and grow in their careers.\nBeing part of the Bihari community here in Ireland means a lot to me, as it keeps me connected to home while building a life abroad. I look forward to getting to know everyone and staying connected with our shared culture and roots.\nPatna se Dublin tak — Bihar hamesha dil mein hai!",
   },
-  { name: "Manish", role: "Team Member", photo: "", bio: "" },
-  { name: "Vibha", role: "Team Member", photo: "", bio: "" },
-  { name: "Shilpi Siha", role: "Team Member", photo: "", bio: "" },
 ];

@@ -31,7 +31,7 @@ const guidelines = [
     icon: ShieldCheck,
     title: "Code of Conduct at Events",
     description:
-      "Members and guests attending BJAI events are expected to behave appropriately, follow venue rules, and respect organisers and volunteers. Disruptive, offensive, or unsafe behaviour will not be tolerated.",
+      "Members and guests attending BJAI events are expected to behave appropriately, follow venue rules, and respect BJAI Executive Committee Members and volunteers. Disruptive, offensive, or unsafe behaviour will not be tolerated.",
   },
   {
     icon: Baby,

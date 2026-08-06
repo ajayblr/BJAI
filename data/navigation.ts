@@ -23,7 +23,7 @@ export const socialLinks = {
   facebook: "https://www.facebook.com/bjaireland",
   instagram: "https://www.instagram.com/bjaireland",
   twitter: "https://x.com/bja_ireland",
-  youtube: "https://youtube.com/",
+  youtube: "https://www.youtube.com/@bjaireland",
   whatsapp: "https://forms.gle/STx5WrbQqvY3MtLw6",
 };
 

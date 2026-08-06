@@ -366,24 +366,24 @@ export const faqCategories: FaqCategory[] = [
               Contact Details of Pandit Jis in Ireland
             </p>
 
-            <div className="mt-3 space-y-4">
+            <div className="mt-3">
               <div>
-                <p className="font-semibold text-foreground">Jayesh Joshi</p>
-                <p>Originally from Dwarka, Gujarat, and currently living in Dublin</p>
-                <p>
+                <div className="font-semibold text-foreground">Jayesh Joshi</div>
+                <div>Originally from Dwarka, Gujarat, and currently living in Dublin</div>
+                <div>
                   Phone:{" "}
                   <a href="tel:+353894883689">+353 89 488 3689</a>
-                </p>
+                </div>
               </div>
 
-              <div>
-                <p className="font-semibold text-foreground">Parth Joshi</p>
-                <p>Originally from Haridwar and currently living in Dublin</p>
-                <p>
+              <div className="mt-4">
+                <div className="font-semibold text-foreground">Parth Joshi</div>
+                <div>Originally from Haridwar and currently living in Dublin</div>
+                <div>
                   Phone:{" "}
                   <a href="tel:+353892406933">+353 89 240 6933</a>
-                </p>
-                <p>
+                </div>
+                <div>
                   Website:{" "}
                   <a
                     href="https://modernworldastrology.com/"
@@ -392,28 +392,28 @@ export const faqCategories: FaqCategory[] = [
                   >
                     modernworldastrology.com
                   </a>
-                </p>
+                </div>
               </div>
 
-              <div>
-                <p className="font-semibold text-foreground">Rawin Putteeraj</p>
-                <p>Originally from Mauritius and currently living in Dublin</p>
-                <p>
+              <div className="mt-4">
+                <div className="font-semibold text-foreground">Rawin Putteeraj</div>
+                <div>Originally from Mauritius and currently living in Dublin</div>
+                <div>
                   Phone:{" "}
                   <a href="tel:+353857502746">+353 85 750 2746</a>
-                </p>
+                </div>
               </div>
 
-              <div>
-                <p className="font-semibold text-foreground">Sudaxina Rawal</p>
-                <p>
+              <div className="mt-4">
+                <div className="font-semibold text-foreground">Sudaxina Rawal</div>
+                <div>
                   Originally from Ujjain, Madhya Pradesh, and currently
                   living in Dublin
-                </p>
-                <p>
+                </div>
+                <div>
                   Phone:{" "}
                   <a href="tel:+353899761317">+353 89 976 1317</a>
-                </p>
+                </div>
               </div>
             </div>
 

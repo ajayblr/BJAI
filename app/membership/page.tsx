@@ -7,10 +7,11 @@ import {
   Briefcase,
   BadgeCheck,
 } from "lucide-react";
+import Link from "next/link";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import Reveal from "@/components/shared/Reveal";
-import MembershipForm from "@/components/shared/MembershipForm";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Membership",
@@ -60,8 +61,8 @@ const benefits = [
 const steps = [
   {
     step: "1",
-    title: "Fill in the Form",
-    description: "Complete the membership form below with your details and area of interest.",
+    title: "Get in Touch",
+    description: "Reach out to us via the Contact Us page with your details and area of interest.",
   },
   {
     step: "2",
@@ -134,17 +135,21 @@ export default function MembershipPage() {
         </div>
       </section>
 
-      {/* Membership form */}
+      {/* Contact Us */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Become a Member"
-            title="Membership Interest Form"
-            subtitle="Fill in your details below and we'll get back to you with everything you need to know."
+            title="Contact Us"
+            subtitle="Get in touch with your details and area of interest, and we'll get back to you with everything you need to know."
           />
-          <div className="mt-10 rounded-2xl bg-cream p-6 shadow-sm ring-1 ring-foreground/5 sm:p-10">
-            <MembershipForm />
-          </div>
+          <Button
+            render={<Link href="/contact" />}
+            size="lg"
+            className="mt-8 bg-saffron text-white hover:bg-saffron/90"
+          >
+            Contact Us
+          </Button>
         </div>
       </section>
     </>

@@ -23,7 +23,7 @@ export default function GalleryModal({
   return (
     <Dialog open={!!item} onOpenChange={(open) => !open && onClose()}>
       {item && (
-        <DialogContent className="max-w-2xl">
+        <DialogContent className="w-[calc(100%-2rem)] max-w-none sm:max-w-2xl">
           <div className="relative aspect-video w-full overflow-hidden rounded-lg">
             <Image src={item.image} alt={item.caption} fill className="object-cover" />
             {item.type === "video" && (
