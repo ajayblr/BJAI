@@ -19,7 +19,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { mainNav, moreNav } from "@/data/navigation";
+import { mainNav, moreNav, socialLinks } from "@/data/navigation";
+import { FacebookIcon, InstagramIcon, XTwitterIcon } from "@/components/shared/SocialIcons";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -94,14 +95,19 @@ export default function Header() {
           </DropdownMenu>
         </nav>
 
-        {/* CTA + Mobile menu trigger */}
+        {/* Social links + Mobile menu trigger */}
         <div className="flex items-center gap-2">
-          <Button
-            render={<Link href="/membership" />}
-            className="hidden bg-saffron text-white hover:bg-saffron/90 sm:inline-flex"
-          >
-            Join BJAI
-          </Button>
+          <div className="hidden items-center gap-2 sm:flex">
+            <HeaderSocialIcon href={socialLinks.facebook} label="Facebook">
+              <FacebookIcon className="h-4.5 w-4.5" />
+            </HeaderSocialIcon>
+            <HeaderSocialIcon href={socialLinks.instagram} label="Instagram">
+              <InstagramIcon className="h-4.5 w-4.5" />
+            </HeaderSocialIcon>
+            <HeaderSocialIcon href={socialLinks.twitter} label="X / Twitter">
+              <XTwitterIcon className="h-4.5 w-4.5" />
+            </HeaderSocialIcon>
+          </div>
 
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
@@ -150,5 +156,27 @@ export default function Header() {
         </div>
       </div>
     </header>
+  );
+}
+
+function HeaderSocialIcon({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="flex h-9 w-9 items-center justify-center rounded-full text-maroon transition-colors hover:bg-saffron/10 hover:text-saffron"
+    >
+      {children}
+    </a>
   );
 }
