@@ -39,13 +39,13 @@ export const members: Member[] = [
     bio: "I am an experienced Test Management and quality assurance professional and have been living in Ireland with my family for the past 14 years. I have been associated with BJAI since 2022 and, since joining the association, I have taken an active interest in community activities and regularly participated in BJAI-organised cultural and social events. My involvement includes celebrations such as Chhath Puja, the Ganesh Festival, and Holi, where I have contributed through my participation and support.\nThrough my professional experience and community involvement, I have developed a strong sense of responsibility, collaboration, and commitment. I value cultural traditions, community engagement, and the opportunity to connect with and support fellow members of the Indian community in Ireland.",
   },
   {
-    name: "Saket",
+    name: "Saket Kumar",
     role: "Team Member",
     photo: "/images/members/saket.jpg",
     bio: "I am from Madhubani, Bihar, and was born and raised in Ranchi, Jharkhand. I moved to Ireland in 2019 to pursue a Master’s degree in Business Analytics and have since established my professional career here.\nI currently work as a Senior Business Analyst with AXA Insurance Ireland and live in Newbridge, County Kildare. I speak Hindi, Maithili, and English.\nI am pleased to be part of the Bihar and Jharkhand community in Ireland and look forward to connecting with fellow members through BJAI’s cultural and community events.",
   },
   {
-    name: "Bikash",
+    name: "Bikash Mandal",
     role: "Cultural Coordinator",
     photo: "/images/members/bikash.jpg",
     bio: "Hi, I'm Bikash, originally from Dhanbad, Jharkhand, the coal capital of India. I made Ireland my home in 2017, moving here to pursue my Master's in Business Analytics at UCD Michael Smurfit Graduate Business School.\nCurrently I am working as a Lead Data Scientist in an Irish firm, and I'm deeply passionate about the ever-evolving world of AI, always eager to explore new ideas and technologies in the field.\nCommunity is close to my heart. As a member of BJAI's cultural committee, I've been actively involved in organizing our celebrations, from Chhath Puja to Holi and various other events, bringing people together and keeping our traditions alive here in Ireland.\nOutside of work and community life, you'll usually find me travelling and soaking up new cultures. I believe every place, and every person, has a story worth discovering.",
@@ -57,7 +57,7 @@ export const members: Member[] = [
     bio: "I was born in Bhilai, Chhattisgarh, and spent most of my life in Jamshedpur, Jharkhand, while my native roots are in Bihar. I moved to Ireland in 2024 and currently work as a Database Developer with a banking firm.\nOutside of work, I enjoy playing badminton and travelling. I have been actively involved with BJAI since 2024, and I truly enjoy contributing to the community by helping organise events such as Chhath Puja, Holi celebrations, picnics, and other community activities.",
   },
   {
-    name: "Rajeev",
+    name: "Rajeev Ranjan",
     role: "Team Member",
     photo: "/images/members/rajeev.png",
     bio: "I am from Bokaro, Jharkhand. I have been living in Ireland since 2016 and currently live in Kildare Town with my family, including my 8-year-old son.\nI have been associated with BJAI since 2022, beginning with the Chhath Puja celebration, which was the first of its kind in Ireland and a truly memorable moment for all of us. Being part of BJAI means a great deal to me, as it keeps me connected to my roots while helping build a strong support system for our people away from home.\nProfessionally, I have experience across consulting, digital and data transformation, and programme delivery. I currently work with one of Ireland's pillar banks, delivering large-scale technology and transformation programmes.\nI speak Hindi and English. Outside of work, I care deeply about community involvement and staying connected to our shared cultural roots here in Ireland. I am always happy to contribute my time and support towards strengthening BJAI and promoting the continued growth of our community in Ireland.",
@@ -66,7 +66,7 @@ export const members: Member[] = [
     name: "Kisalay Prasad",
     role: "Team Member",
     photo: "/images/members/kisalayprasad.png",
-    bio: "",
+    bio: "My name is Kisalay. I was born and brought up in Rourkela, Odisha, with my native roots in Darbhanga, Bihar. I moved to Ireland in August 2022 for work and currently work as a Technical Architect with Hewlett Packard Enterprise.\nI have been associated with BJAI – Bihar Jharkhand Association of Ireland since August 2022, and I have thoroughly enjoyed the journey so far. One of the things I value most is the opportunity to meet new people, build meaningful connections, and be part of a vibrant and welcoming community.\nBJAI provides me with a wonderful platform to stay connected with my roots and feel at home, even while living away from India.\nAs part of my involvement with BJAI, I take responsibility for coordinating food vendors and managing food-related activities during events. Being a passionate foodie and an enthusiastic home cook myself, I find immense joy in contributing to the community through something I genuinely love — food.\nIt is particularly rewarding to see people come together, enjoy good food, and create lasting memories as one extended community.",
   },
   {
     name: "Alok Kumar",
@@ -79,5 +79,17 @@ export const members: Member[] = [
     role: "Team Member",
     photo: "/images/members/shambhukumar.jpg",
     bio: "My name is Shambhu Kumar. I was born and raised in Patna, and my roots go back to Darbhanga, Bihar. I now call Dublin, Ireland, my home.\nI began my academic journey at Magadh University and later pursued further studies through IGNOU, the Indian Institute of Management Calcutta, and the International Business Management Institute, Germany.\nProfessionally, I currently serve as EMEA Engineering Leader / Director of Engineering at eBay. Before this, I had the privilege of working with Microsoft and Amazon Web Services. My work focuses on AI, machine learning, databases, data science, cloud architecture, and enterprise engineering. I am also passionate about mentoring and enjoy helping others navigate and grow in their careers.\nBeing part of the Bihari community here in Ireland means a lot to me, as it keeps me connected to home while building a life abroad. I look forward to getting to know everyone and staying connected with our shared culture and roots.\nPatna se Dublin tak — Bihar hamesha dil mein hai!",
+  },
+  {
+    name: "Amit Jaiswal",
+    role: "Team Member",
+    photo: "/images/members/amitjaiswal.jpg",
+    bio: "My name is Amit Jaiswal, and I am originally from Manihari, a small town in the Katihar district of Bihar. I completed my secondary and higher secondary education in Jamshedpur, followed by a BSc in Visakhapatnam and an MSc in Gwalior. After working for a few years at the National Chemical Laboratory in Pune, I received a scholarship to pursue a PhD and moved to Ireland in 2008.\nI later completed my PhD and MBA at TU Dublin, where I currently work as a Senior Lecturer. I live in Ashtown, Dublin, with my wife, Swarna Jaiswal, and our two children, Viaan and Aavya. Swarna and I work in the same profession at TU Dublin and even share the same office, which makes our professional journey quite unique.\nI joined the Bihar Jharkhand Association of Ireland (BJAI) in 2022 and am currently part of the Executive Committee Team. Being part of BJAI gives me a strong sense of home and belonging, even while living far from Bihar. It helps me stay connected to our culture, traditions, and shared identity, while also giving me the opportunity to help the next generation understand and take pride in their roots.\nI look forward to building lasting friendships and contributing my time and support towards strengthening our community in Ireland.",
+  },
+  {
+    name: "Bibha Sharma",
+    role: "Team Member",
+    photo: "/images/members/bibhasharma.jpg",
+    bio: "My name is Bibha Sharma, and I am from Deoghar, Jharkhand, with roots in Bhabhua, Bihar. I moved to Ireland in 2012 and currently live in Naas, County Kildare, with my family.\nProfessionally, I work as a Global Fermentation Scientist at Kerry Group. I hold a PhD in Food Biosciences from University College Dublin and a master's degree in food technology from CFTRI, Mysore.\nI speak Bhojpuri, Hindi, and English. Outside of work, I enjoy meeting people, travelling, and cooking.\nBeing part of the Bihar Jharkhand community in Ireland keeps me connected to home. As a BJAI Committee member, I actively support the organisation of community events and BJAI's outreach activities. I am passionate about helping instil Bihariyat in the next generation while contributing to the wider Irish-Indian community.\nI remain committed to strengthening BJAI and building deeper connections within our growing community in Ireland.",
   },
 ];

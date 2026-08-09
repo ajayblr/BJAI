@@ -47,6 +47,12 @@ const festivals = [
     description:
       "Annual celebrations marking the foundation of Bihar (22 March) and Jharkhand (15 November), honouring the history and identity of both states.",
   },
+  {
+    name: "Makar Sankranti",
+    origin: "Bihar & Jharkhand",
+    description:
+      "A harvest festival marking the sun's transition into Capricorn, celebrated with til-gud sweets, kite flying, and traditional dishes like khichdi and chura-dahi.",
+  },
 ];
 
 export default function CultureHeritagePage() {
@@ -159,8 +165,8 @@ export default function CultureHeritagePage() {
             <Reveal delay={0.1} className="lg:order-1">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl">
                 <Image
-                  src="/images/culture/buddha.png"
-                  alt="Statue of Buddha, reflecting Bihar's spiritual heritage as the birthplace of Buddhism"
+                  src="/images/culture/hundru.jpg"
+                  alt="Hundru Falls, one of Jharkhand's most iconic natural landmarks"
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"

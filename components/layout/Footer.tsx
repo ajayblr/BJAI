@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { mainNav, moreNav, socialLinks, contactInfo } from "@/data/navigation";
 import { FacebookIcon, InstagramIcon, XTwitterIcon, YoutubeIcon } from "@/components/shared/SocialIcons";
 
@@ -43,9 +43,6 @@ export default function Footer() {
               </SocialIcon>
               <SocialIcon href={socialLinks.youtube} label="YouTube">
                 <YoutubeIcon className="h-4.5 w-4.5" />
-              </SocialIcon>
-              <SocialIcon href={socialLinks.whatsapp} label="WhatsApp">
-                <MessageCircle className="h-4.5 w-4.5" />
               </SocialIcon>
             </div>
           </div>
