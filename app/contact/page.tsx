@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import Reveal from "@/components/shared/Reveal";
@@ -18,7 +18,6 @@ const socials = [
   { icon: InstagramIcon, label: "Instagram", href: socialLinks.instagram },
   { icon: XTwitterIcon, label: "X / Twitter", href: socialLinks.twitter },
   { icon: YoutubeIcon, label: "YouTube", href: socialLinks.youtube },
-  { icon: MessageCircle, label: "WhatsApp", href: socialLinks.whatsapp },
 ];
 
 export default function ContactPage() {
