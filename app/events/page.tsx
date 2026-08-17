@@ -11,9 +11,15 @@ export const metadata: Metadata = {
     "Discover upcoming and past BJAI events — festivals, cultural celebrations, youth programmes, charity fundraisers, and community gatherings across Ireland.",
 };
 
-const summerPicnic = getEventBySlug("bjai-summer-picnic-2026");
-const pastEventsExcludingPicnic = pastEvents.filter(
-  (e) => e.slug !== "bjai-summer-picnic-2026"
+const latestHighlightSlugs = [
+  "fici-community-champion-award-2026",
+  "bjai-summer-picnic-2026",
+];
+const latestHighlights = latestHighlightSlugs
+  .map((slug) => getEventBySlug(slug))
+  .filter((e): e is NonNullable<typeof e> => Boolean(e));
+const pastEventsExcludingHighlights = pastEvents.filter(
+  (e) => !latestHighlightSlugs.includes(e.slug)
 );
 
 export default function EventsPage() {
@@ -24,19 +30,21 @@ export default function EventsPage() {
         subtitle="Festivals, cultural celebrations, charity galas, youth programmes and community gatherings — there's always something happening at BJAI."
       />
 
-      {/* Latest highlight */}
-      {summerPicnic && (
+      {/* Latest highlights */}
+      {latestHighlights.length > 0 && (
         <section className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Just Happened"
-              title="Latest Event Highlight"
+              title="Latest Event Highlights"
               align="left"
             />
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Reveal>
-                <EventCard event={summerPicnic} />
-              </Reveal>
+              {latestHighlights.map((event, i) => (
+                <Reveal key={event.slug} delay={i * 0.08}>
+                  <EventCard event={event} />
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
@@ -69,7 +77,7 @@ export default function EventsPage() {
             align="left"
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {pastEventsExcludingPicnic.map((event, i) => (
+            {pastEventsExcludingHighlights.map((event, i) => (
               <Reveal key={event.slug} delay={(i % 3) * 0.08}>
                 <EventCard event={event} />
               </Reveal>

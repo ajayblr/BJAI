@@ -27,6 +27,34 @@ export interface BjaiEvent {
 
 export const events: BjaiEvent[] = [
   {
+    slug: "fici-community-champion-award-2026",
+    title: "BJAI Receives FICI Community Champion Award",
+    category: "Community",
+    status: "past",
+    featured: true,
+    image: "/images/events/fici-community-champion-award-2026.jpg",
+    gallery: [],
+    facebookUrl:
+      "https://www.facebook.com/story.php?story_fbid=1079851428075854&id=100081530210461&rdid=mqZQ7bIjbxS02HQI#",
+    date: "16 August 2026",
+    time: "Afternoon",
+    location: "Merrion Square Park, Dublin 2",
+    shortDescription:
+      "BJAI received the Community Champion Award from FICI at the India Day Festival in Dublin, in recognition of its sustainable and environmentally conscious celebration of Chhath Puja.",
+    description: [
+      "A Proud Moment for the BJAI Family!",
+      "We are delighted and honoured to share that BJAI has received the Community Champion Award from FICI at the India Day Festival in Dublin, Ireland.",
+      "Our heartfelt thanks to the entire FICI team for recognising BJAI's contribution to the community and, in particular, the sustainable and environmentally conscious values reflected in the celebration of Chhath Puja.",
+      "Chhath Puja is a beautiful example of how our ancient traditions bring communities together while maintaining a deep respect for nature. The use of natural and biodegradable materials, seasonal fruits and agricultural produce, along with the worship of the Sun and nature, reflects values of simplicity, gratitude and sustainability.",
+      "This recognition belongs to the entire BJAI family — our dedicated volunteers, performers, families, children and every community member who contributes their time, energy and enthusiasm to making our initiatives meaningful and successful.",
+      "We are extremely proud to see our cultural heritage, community spirit and commitment to sustainability recognised in this way. This award motivates us to continue creating opportunities that bring people together through culture, community, inclusivity and sustainability.",
+      "Thank you once again to FICI, and congratulations to the entire BJAI family.",
+      "This award belongs to all of us!",
+    ],
+    organiser: "Federation of Indian Communities in Ireland",
+    contactEmail: "bjaireland@gmail.com",
+  },
+  {
     slug: "bjai-summer-picnic-2026",
     title: "BJAI Summer Picnic 2026",
     category: "Community",
